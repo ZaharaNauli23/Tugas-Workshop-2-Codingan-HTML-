@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Data Pengguna</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      padding: 30px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .container {
+      max-width: 400px;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin: auto;
+    }
+    input[type="text"], input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      width: 100%;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .result {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #e9f7ef;
+      border: 1px solid #d4edda;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Form Data Pengguna</h1>
+  <div class="container">
+    <label for="name">Nama:</label>
+    <input type="text" id="name" placeholder="Masukkan nama" />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Masukkan email" />
+
+    <button onclick="tampilkanData()">Kirim</button>
+
+    <div class="result" id="hasil" style="display:none;"></div>
+  </div>
+
+  <script>
+    function tampilkanData() {
+      const nama = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const hasil = document.getElementById("hasil");
+
+      if(nama && email){
+        hasil.style.display = "block";
+        hasil.innerHTML = <strong>Data Diterima:</strong><br>Nama: ${nama}<br>Email: ${email};
+      } else {
+        alert("Harap isi semua data!");
+      }
+    }
+  </script>
+</body>
+</html>
