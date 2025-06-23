@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Zahara</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
+      color: #333;
+    }
+    header {
+      background-color: #00796b;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+    .container {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      animation: slideIn 1.5s ease;
+    }
+    .profile img {
+      width: 200px;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .profile-text h2 {
+      margin-top: 0;
+    }
+    .projects {
+      margin-top: 50px;
+    }
+    .project {
+      background: #f5f5f5;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      animation: fadeInUp 1.2s ease-in;
+    }
+
+    /* Animasi */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95);}
+      to { opacity: 1; transform: scale(1);}
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-50px);}
+      to { opacity: 1; transform: translateX(0);}
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #004d40;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Portofolio Zahara Nauli Ibrahim</h1>
+    <p>Developer | Designer | Dreamer</p>
+  </header>
+
+  <div class="container">
+    <section class="profile">
+      <img src="zahara.jpg" alt="Foto Profil Zahara" />
+      <div class="profile-text">
+        <h2>Tentang Saya</h2>
+        <p>Halo! Saya Zahara Nauli Ibrahim, seorang web developer dan desainer UI/UX yang suka membangun pengalaman digital yang menyenangkan dan fungsional. Saya percaya bahwa teknologi bisa membawa keindahan jika digabungkan dengan desain yang baik.</p>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>Proyek Terbaru</h2>
+      <div class="project">
+        <h3>Aplikasi Taman Bunga 3D</h3>
+        <p>Simulasi taman bunga dinamis dengan transisi siang-malam, bunga bergoyang, awan bergerak, dan bayangan realistis menggunakan OpenGL.</p>
+      </div>
+      <div class="project">
+        <h3>Desain UI Marketplace</h3>
+        <p>Merancang tampilan marketplace modern untuk pemesanan makanan lokal dengan tema warna hangat dan navigasi intuitif.</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Zahara Ibrahim. All rights reserved.
+  </footer>
+
+</body>
+</html>
